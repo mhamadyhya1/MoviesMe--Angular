@@ -1,0 +1,63 @@
+
+  <nav class=" navbar navbar-expand-lg bg-dark ">
+    <a class="navbar-brand " routerLink="">
+      <img class="logo" src="{{imagenavbar}}" style="width:20px">
+      {{title}}
+    </a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+   
+   <div class="collapse navbar-collapse" id="navbarMenu">
+    <ul class=" navbar-nav">
+      <li class="nav-item text-center ">
+        <a class="nav-link active" routerLink="/">{{homeButton}}</a>
+      </li>
+      <li class="nav-item ">
+        
+        <a routerLink="/AddMovie">{{addMoviebutton}}</a>
+        
+      </li>
+      <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          {{genreButton[0]}}
+        </a>
+        <div class="dropdown-menu text-center">
+          <a class="dropdown-item" href="#">{{genreButton[1]}}</a>
+          <a class="dropdown-item" href="#">{{genreButton[2]}}</a>
+          <a class="dropdown-item" href="#">{{genreButton[3]}}</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="col-md-12 text-center">
+          <button class=" Login btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" type="Login">Login</button>
+          <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <div class="text-center">
+                      <h4 class="modal-title" style="text-align: left;">Login Header</h4>
+                    </div>
+                    
+                  </div>
+                  <div class="modal-body">
+                    <p>No Account Login service available</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+        </div>
+      </li>
+    </ul>
+   </div>
+  </nav>
+
+
+
+  
